@@ -2,13 +2,19 @@
 
 function findFactor(n){
 
-    let arr =[]
+if(n<=0) return false;
+process.stdout.write(1+" ")
 
-    for(let i=0;i<=n/2;i++){
+    for(let i=2;i<=n/2;i++){
 if(n%i==0){
-    arr[i]=n;
+process.stdout.write(i+" ")
 }
+
     }
-    return arr;
+    if(n>1){
+   process.stdout.write(n+" ")
+   }
+   
+
 }
 console.log(findFactor(36));
