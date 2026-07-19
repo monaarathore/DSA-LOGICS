@@ -46,7 +46,20 @@ if(n.length!=10){
     let ans = 0;
     let multipler = 1
 
-    for(let i=9 ;i>=0;i--){
-
-    }
+   for(let i=9;i>=0;i--){
+    let dig;
+if(i===9&& (n[i]==="X" || n[i]==='x')){
+dig =10;
+}else{
+    dig=parseInt(n[i])
 }
+ans = ans+(dig*multipler)
+multipler++;
+   }
+    console.log(ans%11==0 ? "Valid ISBN":"Invalid ISBN");
+   }
+ 
+
+
+
+
