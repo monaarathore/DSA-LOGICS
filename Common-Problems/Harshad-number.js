@@ -19,4 +19,4 @@ else{
 }
 }
 
-console.log(HarshadNumber(12));
+console.log(HarshadNumber(12  ));
